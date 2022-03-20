@@ -1,0 +1,378 @@
+1   // Load 4
+4
+9   // Put 1
+1
+1   // Load space
+32
+9   // Put 2
+2
+1   // Load X
+88
+9   // Put 2
+2
+1   // Load space
+32
+9   // Put 2
+2
+1   // Load 4
+4
+9   // Put 1
+1
+1   // Load space
+32
+9   // Put 2
+2
+1   // Load M
+77
+9   // Put 2
+2
+1   // Load u
+117
+9   // Put 2
+2
+1   // Load l
+108
+9   // Put 2
+2
+1   // Load t
+116
+9   // Put 2
+2
+1   // Load i
+105
+9   // Put 2
+2
+1   // Load p
+112
+9   // Put 2
+2
+1   // Load l
+108
+9   // Put 2
+2
+1   // Load i
+105
+9   // Put 2
+2
+1   // Load c
+99
+9   // Put 2
+2
+1   // Load a
+97
+9   // Put 2
+2
+1   // Load t
+116
+9   // Put 2
+2
+1   // Load i
+105
+9   // Put 2
+2
+1   // Load o
+111
+9   // Put 2
+2
+1   // Load n
+110
+9   // Put 2
+2
+1   // Load space
+32
+9   // Put 2
+2
+
+1   // Load t
+116
+9   // Put 2
+2
+1   // Load a
+97
+9   // Put 2
+2
+1   // Load b
+98
+9   // Put 2
+2
+1   // Load l
+108
+9   // Put 2
+2
+1   // Load e
+101
+9   // Put 2
+2
+23  // Call for new line
+130
+
+
+
+  // --- 1st row horizontal lines
+1    // load 19 into AC
+19
+14   // Copy 19 into X - inner loop control
+
+1    // load -
+45
+9    // print -
+2
+26   // Decrement value in x
+15   // Copy value in X to AC
+22   // Loop back
+109
+23 // Call for a new line
+130
+23 // Call for 1st row vertical lines
+135
+23 // call for new line
+130
+23  // Jump to 2nd row
+163
+23  // Jump to 3rd row
+209
+23  // Jump to 4th row
+255
+50   // End
+
+
+     // Jump to get newline
+1    // Load 10=newline address 43
+10
+9   // Put 2
+2
+24  // Return
+
+
+
+     // 1st row vertical lines of table
+1    // load 5 into AC
+4
+14   // Copy 5 into X - loop control number
+
+1 // load |
+124
+9 // put 2
+2
+1 // load space
+32
+9 // put 2
+2
+26   // Decrement value in x
+15   // Copy value in X to AC
+27   // Push current value of AC onto stack
+4  // get value from address to address 500 + x
+500
+9 // put 1
+1
+1 // load space
+32
+9 // put 2
+2
+28  // Return value of AC from the stack
+22   // Loop back
+138
+23 // Jump
+300
+24   // return
+
+
+
+ // --- 2nd row horizontal lines for table
+1    // load 19 into AC
+19
+14   // Copy 19 into X - inner loop control
+
+1    // load -
+45
+9    // print -
+2
+26   // Decrement value in x
+15   // Copy value in X to AC
+22   // Loop back
+166
+23 // Call for a new line
+130
+23 // Call for vertical lines
+181
+23 // call for new line
+130
+24 // Return
+
+
+
+    // 2nd row vertical lines for table
+1    // load 4 into AC
+4
+14   // Copy 4 into X - loop control number
+
+1   // load |
+124
+9   // put 2
+2
+1   // load space
+32
+9   // put 2
+2
+26   // Decrement value in x
+15   // Copy value in X to AC
+27   // Push current value of AC onto stack
+4    // get value from address to address 600 + x
+600
+9    // put 1
+1
+1 // load space
+32
+9 // put 2
+2
+28   // Return value of AC from the stack
+22   // Loop back
+184
+23
+300
+24   // return
+
+      // --- 3rd row horizontal lines for table
+1    // load 19 into AC
+19
+14   // Copy 19 into X - inner loop control
+
+1    // load -
+45
+9    // print -
+2
+26   // Decrement value in x
+15   // Copy value in X to AC
+22   // Loop back
+212
+23 // Call for a new line
+130
+23 // Call for Horizontal lines
+227
+23 // call for new line
+130
+24 // return
+
+
+    // 3rd row vertical separation for table
+1    // load 4 into AC
+4
+14   // Copy 4 into X - loop control number
+
+1 // load |
+124
+9 // put 2
+2
+1 // load space
+32
+9 // put 2
+2
+26   // Decrement value in x
+15   // Copy value in X to AC
+27   // Push current value of AC onto stack
+4  // get value from address to address 500 + x
+700
+9 // put 1
+1
+1 // load space
+32
+9 // put 2
+2
+28  // Return value of AC from the stack
+22   // Loop back
+230
+23
+300
+24   // return
+
+
+      // --- 4th row horizontal lines for table
+1    // load 19 into AC
+19
+14   // Copy 19 into X - inner loop control
+
+1    // load -
+45
+9    // print -
+2
+26   // Decrement value in x
+15   // Copy value in X to AC
+22   // Loop back
+258
+23 // Call for a new line
+130
+23 // Call for Horizontal lines
+273
+23 // call for new line
+130
+24 // return
+
+
+
+    // 4th row horizontal separation for table
+1    // load 4 into AC
+4
+14   // Copy 4 into X - loop control number
+
+1 // load |
+124
+9 // put 2
+2
+1 // load space
+32
+9 // put 2
+2
+26   // Decrement value in x
+15   // Copy value in X to AC
+27   // Push current value of AC onto stack
+4  // get value from address to address 800 + x
+800
+9 // put 1
+1
+1 // load space
+32
+9 // put 2
+2
+28  // Return value of AC from the stack
+22   // Loop back
+276
+23
+300
+24   // return
+
+
+   // Ending line of rows
+.300
+1   // load |
+124
+9   // put 2
+2
+24  // return
+
+ // Data for row 1
+.500
+4
+3
+2
+1
+ // Data for row 2
+.600
+8
+6
+4
+2
+  // Data for row 3
+.700
+12
+9
+6
+3
+  // Data for row 4
+.800
+16
+12
+8
+4
+
+.1000
+30
